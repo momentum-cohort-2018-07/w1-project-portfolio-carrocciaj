@@ -22,9 +22,9 @@ img {
     background-color: #97A7B3;
 }
 
-/* .header-desk {
+.header-desk {
     display:none;
-} */
+}
 
 .header-sub {
     font-family: 'Eczar';
@@ -256,8 +256,15 @@ img {
         display: none;
     }
 
+    .header-desk{
+        display: inline;
+        font-size: 1.5rem;
+        padding: 1rem .75rem;
+        color: #475B63;
+    }
+
     .main-nav {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-right: 1rem;
     }
 
@@ -274,7 +281,7 @@ img {
 
    .aboutMe-info img {
        padding: 0;
-       max-height: 80%;
+       max-height: 100%;
    }
    
    .aboutMe-info p {
