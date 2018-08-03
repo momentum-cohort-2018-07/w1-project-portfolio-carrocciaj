@@ -48,7 +48,7 @@ img {
 
 .main-nav__item a:hover {
     text-decoration: underline;
-    color: #9B9987;
+    color: #DBE9EE;
 }
 
 /* **********About ME CSS*********** */
@@ -73,7 +73,52 @@ img {
 }
 
 /* *************Projects CSS ************* */
+.project-header {
+    margin: 1rem 0 0 .5rem;
+    font-size: 2.25rem;
+    color: #475B63; 
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 2rem;  
+    color: #475B63; 
+}
 
+.project-info {
+    max-width: 100%;
+    border-top: 1px solid #9B9987;
+    margin-top: 1rem;
+}
+
+.project-info h3 {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.project-info p {
+    margin: .5rem .5rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-links__item {
+    list-style: none;
+}
+
+.project-links__item a {
+    text-decoration: none;
+    color: #475B63;
+}
+
+.project-links__item a:hover {
+    text-decoration: underline;
+    color: #DBE9EE;
+}
 
 /* *************Resume CSS ************* */
 
@@ -86,6 +131,7 @@ img {
     justify-content: center;
     align-content: center; */
     border-top: 1px solid #9B9987;
+    margin-top: 1rem;
     padding: 1rem 1rem;
     color: #9B9987;
     font-size: .75rem;
@@ -107,6 +153,11 @@ img {
     font-size: 3rem;
 }
 
+.footer-contact a:hover{
+    color: #DBE9EE;
+    text-decoration: none;
+    font-size: 4rem;
+}
 .footer p {
     text-align: center;
     margin: 1rem 0;
