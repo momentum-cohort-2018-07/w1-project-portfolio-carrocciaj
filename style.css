@@ -22,6 +22,10 @@ img {
     background-color: #97A7B3;
 }
 
+/* .header-desk {
+    display:none;
+} */
+
 .header-sub {
     font-family: 'Eczar';
 }
@@ -245,7 +249,16 @@ img {
 
 @media only screen and (min-width: 600px){
     body {
-        max-width: 1200px;
+        max-width: 1300px;
+    }
+
+    .header h1 {
+        display: none;
+    }
+
+    .main-nav {
+        font-size: 2rem;
+        margin-right: 1rem;
     }
 
     .aboutMe {
@@ -256,15 +269,17 @@ img {
    .aboutMe-info {
         max-width: 50%;
         padding: 0;
+        margin: 0;
    }
 
    .aboutMe-info img {
        padding: 0;
-       
+       max-height: 80%;
    }
    
    .aboutMe-info p {
        margin: 2rem 0 0 0;
+       font-size: 1.5rem;
    }
     .project {
         flex-direction: row;
