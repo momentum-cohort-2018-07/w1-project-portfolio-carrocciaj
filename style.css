@@ -92,6 +92,14 @@ img {
     margin-top: 1rem;
 }
 
+.project-info img {
+    border-radius: 20px;
+    /* border: 2px solid #9B9987; */
+    padding: .5rem;
+    background-color: #97A7B3;
+
+}
+
 .project-info h3 {
     margin: 1rem 0;
     font-weight: bold;
@@ -122,6 +130,75 @@ img {
 
 /* *************Resume CSS ************* */
 
+.resume-container {
+    display: flex;
+    justify-content: flex-start;
+    color: #475B63; 
+}
+
+.headshot {
+    border-radius: 50%;
+}
+.sidebar {
+    max-width: 25%;
+    margin: 1rem;
+    padding-right: .5rem;
+    border-right: 1px solid #9B9987;
+}
+
+.sidebar-items__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.sidebar-items__title li{
+    list-style: none;
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+
+.resume {
+    max-width: 75%;
+    margin: 1rem;
+    /* border: 1px solid green; */
+}
+
+.resume h2 {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+.resume-info__school dl{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #9B9987;
+}
+.resume-info__school dt{
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    /* border: 1px solid blue; */
+}
+.resume-info__school dd{
+    font-size: 1rem;
+    margin-left: 1rem;
+    /* border: 1px solid blue; */
+}
+
+.resume-info__work {
+    font-size: 1.5rem; 
+}
+.resume-info__title{
+    font-size: 1.25rem;
+    list-style: none;
+    margin-left: .5rem;
+}
+.resume-info__worklist {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
 
 /* ***********FOOTER CSS *********** */
 
@@ -156,7 +233,7 @@ img {
 .footer-contact a:hover{
     color: #DBE9EE;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .footer p {
     text-align: center;
@@ -164,3 +241,37 @@ img {
 }
 
 
+/* Responsive for once it hit 768px */
+
+@media only screen and (min-width: 600px){
+    body {
+        max-width: 1200px;
+    }
+
+    .aboutMe {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+   .aboutMe-info {
+        max-width: 50%;
+        padding: 0;
+   }
+
+   .aboutMe-info img {
+       padding: 0;
+       
+   }
+   
+   .aboutMe-info p {
+       margin: 2rem 0 0 0;
+   }
+    .project {
+        flex-direction: row;
+    }
+
+    .project-info {
+        max-width: 50%;
+        padding: 0 1rem;
+    }
+}
