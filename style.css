@@ -38,11 +38,14 @@ img {
     align-self: center;
     font-size: 1.2rem;
 }
-
+.main-nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .main-nav__item {
     list-style: none;
-    margin: 0 .5rem;
-    display: inline;
+    margin-right: .25rem;
 }
 
 .main-nav__item a{      
@@ -63,6 +66,7 @@ img {
 }
 
 .aboutMe__header {
+
     font-size: 2.25rem;
 }
 
@@ -210,7 +214,7 @@ img {
     /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center; */
+    align-content: center; */ 
     border-top: 1px solid #9B9987;
     margin-top: 1rem;
     padding: 1rem 1rem;
@@ -261,7 +265,9 @@ img {
     }
 
     .header-desk{
-        display:flex;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
         font-size: 1.5rem;
         padding: 1rem .75rem;
         color: #475B63;
@@ -269,6 +275,10 @@ img {
 
     .main-nav {
         font-size: 1.5rem;
+        /* margin-right: 1rem; */
+    }
+
+    .main-nav__item {
         margin-right: 1rem;
     }
 
