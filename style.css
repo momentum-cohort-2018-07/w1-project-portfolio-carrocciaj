@@ -146,7 +146,7 @@ img {
 .sidebar {
     max-width: 25%;
     margin: 1rem;
-    padding-right: .5rem;
+    padding-right: 2rem;
     border-right: 1px solid #9B9987;
 }
 
@@ -228,6 +228,11 @@ img {
     list-style: none;
 }
 
+.footer-contact li:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
 .footer-contact a{
     color: #9B9987;
     text-decoration: none;
@@ -237,7 +242,6 @@ img {
 .footer-contact a:hover{
     color: #DBE9EE;
     text-decoration: none;
-    font-size: 3.5rem;
 }
 .footer p {
     text-align: center;
@@ -257,7 +261,7 @@ img {
     }
 
     .header-desk{
-        display: inline;
+        display:flex;
         font-size: 1.5rem;
         padding: 1rem .75rem;
         color: #475B63;
@@ -296,4 +300,22 @@ img {
         max-width: 50%;
         padding: 0 1rem;
     }
+}
+
+@keyframes shake {
+  0% 100% {
+      transform: translate(-25%);
+  }
+
+  25% {
+    transform: translate(25%);
+  }
+
+  50% {
+    transform: translate(-25%);
+  }
+
+  75% {
+    transform: translate(25%);
+  }
 }
